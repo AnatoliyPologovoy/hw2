@@ -71,5 +71,11 @@
 }
 
 .time {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    margin-right: 12px;
+    margin-top: 5px;
+    text-align: right;
 
 }
