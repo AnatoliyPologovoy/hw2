@@ -1,5 +1,6 @@
 .button {
-    width: 132px;
+    /*width: 132px;*/
+
     height: 30px;
     border-radius: 3px;
     align-items: center;
@@ -19,7 +20,7 @@
 }
 
 .secondary {
-    width: 176px;
+    /*width: 176px;*/
     border: 1px solid #0066CC;
     color: #0066CC;
 }
@@ -33,17 +34,17 @@
 }
 
 .default:hover {
-    width: 167px;
+    /*width: 167px;*/
     background: #0080FF;
 }
 
 .red:hover {
-    width: 167px;
+    /*width: 167px;*/
     background: #FF1A47;
 }
 
 .secondary:hover {
-    width: 167px;
+    /*width: 167px;*/
     background: #E5F0FA;
 }
 
