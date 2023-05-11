@@ -1,3 +1,14 @@
 .loader {
     /*свг и/или анимация*/
+    background-image: url("./assets/Ellipse.png");
+    width: 90px;
+    height: 90px;
+    animation-name: loaderRotate;
+    animation-duration: 2500ms;
+}
+
+@keyframes loaderRotate {
+    to {
+      transform: rotate(360deg);
+    }
 }
