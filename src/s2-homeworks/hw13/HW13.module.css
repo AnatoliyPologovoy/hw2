@@ -1,10 +1,19 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .responseContainer {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .imageContainer {
+    margin-right: 50px;
 }
 
 .image {
@@ -14,6 +23,13 @@
 }
 
 .code {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .text {

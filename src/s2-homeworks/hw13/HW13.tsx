@@ -65,6 +65,8 @@ const HW13 = () => {
             })
     }
 
+    const isDisableButton = info.length > 0
+
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
@@ -76,6 +78,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisableButton}
 
                     >
                         Send true
@@ -85,6 +88,8 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisableButton}
+
 
                     >
                         Send false
@@ -94,6 +99,8 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisableButton}
+
 
                     >
                         Send undefined
@@ -103,6 +110,8 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        disabled={isDisableButton}
+
 
                     >
                         Send null
