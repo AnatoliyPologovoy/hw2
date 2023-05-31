@@ -38,9 +38,9 @@ const HW13 = () => {
                 setImage(success200)
                 // дописать
                 console.log(res.data)
-                setText('...всё ок)\n' +
-                    'код 200 - обычно означает что скорее всего всё ок)')
-                setInfo('')
+                setText('...всё ок)')
+                    // + 'код 200 - обычно означает что скорее всего всё ок)')
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
 
             })
             .catch((e) => {
@@ -49,23 +49,27 @@ const HW13 = () => {
                 if (e.response.status === 500) {
                     setCode('Ошибка 500!')
                     setImage(error500)
-                    setText(e.response.data.errorText + ' ' + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }
                 if (e.response.status === 400) {
                     setCode('Ошибка 400!')
                     setImage(error400)
-                    setText(e.response.data.errorText + ' ' + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+
+                    // + ' ' + e.response.data.info)
                 }
                 if (!e.response.status) {
                     setCode('Error!')
                     setImage(errorUnknown)
-                    setText(e.message + ' ' + e.name)
+                    setText(e.message)
+                    setInfo(e.name)
                 }
-                setInfo('')
             })
     }
 
-    const isDisableButton = info.length > 0
+    const isDisableButton = info === '...loading'
 
     return (
         <div id={'hw13'}>
